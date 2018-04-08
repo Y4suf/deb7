@@ -32,7 +32,6 @@ echo -e " 1. No DDOS No HACKING"
 echo -e " 2. No CARDING No SPAMING"
 echo -e " 3. No MULTI LOGIN" 
 echo -e " 4. No TORENT"
-echo -e "WWW MASADIRIYANTO COM"
 echo -e "            "
 	myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 	#echo "Config OVPN (http://$myip/client.tar)" 
@@ -194,7 +193,7 @@ kern=$( uname -r )
 bdates=$( date )
 # Output of results 
 echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
-echo "System Info VPS Server SG.Vultr" | tee -a $HOME/bench.log 
+echo "System Info VPS Server" | tee -a $HOME/bench.log 
 echo "-----------" | tee -a $HOME/bench.log 
 echo "Hostname  : $hn" | tee -a $HOME/bench.log 
 echo "OS        : $opsy" | tee -a $HOME/bench.log 
@@ -206,7 +205,7 @@ echo "Frequency : $freq MHz" | tee -a $HOME/bench.log
 echo "Uptime    : $up" | tee -a $HOME/bench.log 
 echo "Memory    : $tram MB" | tee -a $HOME/bench.log 
 echo "Swap      : $vram MB" | tee -a $HOME/bench.log 
-echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г· www masadiriyanto com Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
+echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г· Mod Mfauzan Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
 PS3='Silahkan ketik nomor pilihan anda lalu tekan enter: '
 options=("Buat User" "Perbarui User" "Hapus User" "Semua User" "User Belum Kadaluarsa" "User Sudah Kadaluarsa" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Monitor Multi Login" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Squid3" "Speedtest" "Quit")
 select opt in "${options[@]}"
@@ -287,7 +286,7 @@ do
 		"Ganti Port Dropbear")	
             echo "Silahkan ganti port Dropbear anda lalu klik enter?"
 	    echo "Port dropbear tidak boleh sama dengan port openVPN/openSSH/squid3 !!!"
-            echo "Port1: 443" 
+            echo "Port1: 777" 
 	    read -p "Port2: " -e -i 109 PORT
 	    #read -p "Port3: " -e -i 143 PORT3
             sed -i "s/DROPBEAR_PORT=[0-9]*/DROPBEAR_PORT=$PORT/g" /etc/default/dropbear
